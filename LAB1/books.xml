@@ -1,0 +1,20 @@
+<library>
+        <book>
+            <title>Harry Potter and the Sorcerer's Stone</title>
+            <author>J.K. Rowling</author>
+            <yearPublished>1997</yearPublished>
+            <price>19.99</price>
+        </book>
+        <book>
+            <title>Diary of a Wimpy Kid</title>
+            <author>Jeff Kinney</author>
+            <yearPublished>2007</yearPublished>
+            <price>12.99</price>
+        </book>
+        <book>
+            <title>Rich Dad Poor Dad</title>
+            <author>Robert T. Kiyosaki</author>
+            <yearPublished>1997</yearPublished>
+            <price>15.99</price>
+        </book>
+        <book><title>Fault in Our Stars</title><author>John Green</author><yearPublished>2012</yearPublished><price>12.99</price></book></library>
