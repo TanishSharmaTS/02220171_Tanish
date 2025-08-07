@@ -22,7 +22,7 @@ def parseXML():
 
 def addBook(title, author, yearPublished, price):
 
-    new_book = ET.SubElement(root, 'book')
+    new_book = ET.Element('book')
     ET.SubElement(new_book, 'title').text = str(title)
     ET.SubElement(new_book, 'author').text = str(author)
     ET.SubElement(new_book, 'yearPublished').text = str(yearPublished)
@@ -47,11 +47,40 @@ def deleteBook(title):
 
 
 
-parseXML()
+while(True):
 
-addBook('Fault in Our Stars', 'John Green', 2012, 12.99)
+    print('\nEnter Values to Get the output.\n1.Parse XML\n2.Add Book\n3.Delete Book')
 
-deleteBook('Atomic Habits')
+    value = int(input())
+
+    match value:
+        case 1:
+            parseXML()
+
+        case 2: 
+            print('Add book title')
+            title = input()
+            print('Add book author')
+            author = input()
+            print('Add published year')
+            publishedYear = input()
+            print('Add price')
+            price = input()
+
+            addBook(title, author, publishedYear, price)
+
+
+        case 3:
+            print('Add title to delete')
+            title = input()
+            deleteBook(title)
+    
+        case _:
+            print('Invalid Option')
+
+
+
+
 
 
 
