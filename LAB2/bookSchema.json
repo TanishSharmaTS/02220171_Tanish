@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Book Store",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "title": {
+                "type": "string",
+                "minLength": 5
+            },
+            "author": {
+                "type": "string",
+                "minLength": 5
+            },
+            "yearPublished": {
+                "type": "string"
+            },
+            "price": {
+                "type": "number"
+            }
+        },
+        "required": [
+            "id",
+            "title",
+            "author",
+            "yearPublished",
+            "price"
+        ],
+        "additionalProperties": false
+    }
+}
